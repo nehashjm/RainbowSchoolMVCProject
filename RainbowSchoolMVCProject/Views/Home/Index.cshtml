@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">RainBow School Management</h1>
+        <p class="lead">Rainbow School Management Web Application Software .</p>
+        @*<p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>*@
+    </section>
+
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <h2 id="gettingStartedTitle">Classes</h2>
+            <p>
+                The Class Section Provides All The Information About The Classes Present In Rainbow School 
+            </p>
+            <p class="btn btn-outline-dark">@Html.ActionLink("Class", "Index", "Classes", new { area = "" }, new { @class = "nav-link" })</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="librariesTitle">
+            <h2 id="librariesTitle">Subjects</h2>
+            <p> The Subjects Section Provides All The Information About All The Subjects Taught In Rainbow School </p>
+            <p class="btn btn-outline-dark">@Html.ActionLink("Subject", "Index", "Subjects", new { area = "" }, new { @class = "nav-link" })</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Students</h2>
+            <p>The Students Section Provides All The Information About All The Students Learning In Rainbow School along with the Class of the Student and Subject choosen by the Student </p>
+            <p class="btn btn-outline-dark">@Html.ActionLink("Student", "Index", "Students", new { area = "" }, new { @class = "nav-link" })</p>
+        </section>
+    </div>
+</main>
